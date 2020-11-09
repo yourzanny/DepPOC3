@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyHelperLib;
+using System;
 using System.Collections.Generic;
 using System.Configuration.Install;
 using System.Diagnostics;
@@ -42,17 +43,20 @@ namespace DepPOC3
                     StartInfo = new ProcessStartInfo
                     {
                         FileName = "cmd.exe",
-                        Arguments = "install",
-                        RedirectStandardOutput = true,
-                        RedirectStandardError = true,
-                        UseShellExecute = false,
-                        //CreateNoWindow = true;
-                        Verb = "runas"//,
-                        //WindowStyle = ProcessWindowStyle.Hidden
+                        Arguments = "/c " + MyExtensionMethods.Quote(servicePath) +" install",
+                        //RedirectStandardOutput = true,
+                        //RedirectStandardError = true,
+                        UseShellExecute = true,
+                        CreateNoWindow = true,
+                        Verb = "runas",
+                        WindowStyle = ProcessWindowStyle.Hidden
                     }
                 };
-                //processTemp.EnableRaisingEvents = false;
                 processTemp.Start();
+                //string result = processTemp.StandardOutput.ReadToEnd();
+
+                //// Display the command output.
+                //DepPOC3HelperMethods.M(result);
             }
             catch (Exception ex)
             {
