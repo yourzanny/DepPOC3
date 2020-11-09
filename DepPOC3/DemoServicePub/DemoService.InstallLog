@@ -1,0 +1,13 @@
+﻿Installing assembly 'C:\Users\USER\source\repos\DepPOC3\DepPOC3\DemoServicePub\DemoService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\USER\source\repos\DepPOC3\DepPOC3\DemoServicePub\DemoService.InstallLog
+   assemblypath = C:\Users\USER\source\repos\DepPOC3\DepPOC3\DemoServicePub\DemoService.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\USER\source\repos\DepPOC3\DepPOC3\DemoServicePub\DemoService.exe assembly.
+Committing assembly 'C:\Users\USER\source\repos\DepPOC3\DepPOC3\DemoServicePub\DemoService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\USER\source\repos\DepPOC3\DepPOC3\DemoServicePub\DemoService.InstallLog
+   assemblypath = C:\Users\USER\source\repos\DepPOC3\DepPOC3\DemoServicePub\DemoService.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\USER\source\repos\DepPOC3\DepPOC3\DemoServicePub\DemoService.exe assembly.
+Remove InstallState file because there are no installers.
