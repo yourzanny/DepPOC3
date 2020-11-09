@@ -162,5 +162,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MyHelperLib\MyHelperLib\MyHelperLib.csproj">
+      <Project>{d9d200f9-68eb-4c0a-85fa-dc5597bc4935}</Project>
+      <Name>MyHelperLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
